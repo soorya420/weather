@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family:sans-serif;
+    background-color: rgb(15, 15, 15);
+    color: white;
+}
+.nav-bar img{
+    margin: 20px 0 0 80px;
+    cursor: pointer;
+}
+.nav{
+    margin: 50px 0 0 48%;
+}
+.nav li{
+    display: inline;
+    margin: 0 0 0 60px;
+    font-size: 18px;
+    cursor:pointer;
+}
+.nav button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size:18px;
+    color: white; 
+    background-image: linear-gradient(90deg,#e75480,#9a9196);
+    box-shadow:1px 1px 2px #000 ;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+.interface h1{
+    font-weight: normal;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    font-size :35px;
+}
+.news{
+    margin: 50px 0 50px 0;
+}
+.interface p{
+    letter-spacing: 5px;
+    font-size: 20px ;
+}
+.material-icons{
+    position: fixed;
+    margin: 18px 0 0 30px;
+}
+.interface input{
+    border: none;
+    outline: none;
+    padding: 20px 100px;
+    border-radius: 5px 0 0 5px;
+    font-size:  20px;
+    margin-bottom: 5px;
+    background-color:#ff007f ;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.interface input::placeholder {
+    color: #fff;
+    font-style: italic;
+    letter-spacing: 1px;
+    opacity: 0.8; /* Slight transparency */
+}
+::placeholder {
+    color: #fff;  /* white placeholder text */
+    font-style: italic; /* Slightly italic for style */
+}
+#place {
+    text-transform: capitalize; /* Capitalize each word */
+}
+.info {
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+    margin-top: 3%;
+}
+#deg {
+    font-size: 50px;
+    font-weight: bold;
+}
+#min, #max {
+    font-size: 18px;
+    margin: 0 15px;
+}
+.list_info {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.convertor {
+    margin-top: 20px;
+    text-align: center;
+}
+#celsius, #fahrenheit {
+    margin: 0 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+#celsius:hover, #fahrenheit:hover {
+    color: #ff007f;
+}

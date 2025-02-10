@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Forecast</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Script -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-- Title Icon -->
+    <link rel="icon" href="images/title.jpg">
+    <!-- Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-con">
+        <div class="nav-bar">
+            <img src="icon/logo.jpg" width="140px" height="50px" alt="Logo">
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>Map</li>
+                    <li>News</li>
+                    <li>Contact</li>
+                    <li><button>Get App</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="interface">
+            <h1>Different kinds of weather</h1>
+            <h1>Inside of 24/7 hours</h1>
+            <div class="news">
+                <p>You too often see very human cultural artifacts really lead the</p>
+                <p>business down certain routes</p>
+            </div>
+
+            <span class="material-icons">search</span>
+            <input type="text" id="place" placeholder="Search City, Place">
+            <button onclick="weather(document.querySelector('#place').value)">Get Update</button>
+            <p>Best way to know your city weather.</p>
+        </div>
+    </div>
+
+    <div class="info">
+        <div class="header">
+            <h1>Today's Weather Report</h1>
+        </div>
+        <!-- header end -->
+        <div class="report">
+            <img src="icon/N_A.jpg" id="icon" width="200px" height="200px" alt="Weather Icon">
+            <span id="description"></span>
+        </div>
+        <!-- report end -->
+        <div class="output">
+            <div class="digit">
+                <h1 id="deg">0°C</h1>
+                <span id="min">0°C</span>
+                <span id="max">0°C</span>
+            </div>
+        </div>
+        <!-- output end -->
+    </div>
+    <!-- info end -->
+
+    <div class="list_info">
+        <h3 id="wind">Wind: e mph</h3>
+        <h3 id="humidity">Humidity: e%</h3>
+    </div>
+    <!-- list end -->
+
+    <div class="convertor">
+        <span id="celsius" onclick="con('celsius')">&deg;C</span>
+        <span id="fahrenheit" onclick="con('fahrenheit')">&deg;F</span>
+    </div>
+    <!-- convertor end -->
+</body>
+</html>
